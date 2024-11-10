@@ -1,0 +1,6 @@
+[
+    {"nome": "Babador", "categoria": "Alimentacao", "quantidade": 4},
+    {"nome": "Pratinho Infantil", "categoria": "Alimentacao", "quantidade": 1},
+    {"nome": "Borrifador de Água", "categoria": "Higiene", "quantidade": 1},
+    {"nome": "Escova de Cabelos", "categoria": "Higiene", "quantidade": 1}
+]

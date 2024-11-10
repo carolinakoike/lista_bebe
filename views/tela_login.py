@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox
-from tela_menu import abrir_menu
+from views.tela_menu import abrir_menu
 from services.database import criar_banco, autenticar_usuario, cadastrar_usuario
 
 def iniciar_tela_login():
@@ -11,7 +11,6 @@ def iniciar_tela_login():
     
     criar_banco()
 
-    # Widgets da interface de login
     tk.Label(root, text="Usuário").pack()
     entry_usuario = tk.Entry(root)
     entry_usuario.pack()
@@ -28,19 +27,21 @@ def iniciar_tela_login():
 
     root.mainloop()
 
-# Função de login
 def login():
     nome_usuario = entry_usuario.get()
     senha_usuario = entry_senha.get()
 
-    if autenticar_usuario(nome_usuario, senha_usuario):
+    usuario = autenticar_usuario(nome_usuario, senha_usuario)  
+
+    if usuario:
         messagebox.showinfo("Login", "Login bem-sucedido!")
-        root.withdraw()  # Oculta a janela de login
-        abrir_menu(root)
+        usuario_id = usuario[0]  
+        nome_atual = usuario[1] 
+        root.withdraw()  
+        abrir_menu(root, usuario_id, nome_atual)  
     else:
         messagebox.showerror("Erro", "Nome de usuário ou senha incorretos!")
 
-# Função de cadastro
 def abrir_cadastro():
     global cadastro_janela, entry_cadastro_usuario, entry_cadastro_senha
     cadastro_janela = tk.Toplevel(root)

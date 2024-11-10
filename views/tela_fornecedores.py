@@ -2,10 +2,8 @@ import tkinter as tk
 from tkinter import messagebox
 from services.api_requests import obter_fornecedores_proximos
 
-# Substitua pela sua chave de API da Foursquare Places
 API_KEY_FOURSQUARE = "fsq3QdloZQDELAzVTqhbh/jW4E0B+4zVmGX0GDL1x1b8z6Y="
 
-# Função para abrir a tela de fornecedores próximos
 def abrir_tela_fornecedores():
     janela_fornecedores = tk.Toplevel()
     janela_fornecedores.title("Fornecedores Próximos")
@@ -19,11 +17,9 @@ def abrir_tela_fornecedores():
     entry_tipo = tk.Entry(janela_fornecedores)
     entry_tipo.pack()
 
-    # Frame para lista e barra de rolagem
     frame_lista = tk.Frame(janela_fornecedores)
     frame_lista.pack(fill="both", expand=True)
 
-    # Lista de fornecedores e scrollbar
     lista_fornecedores = tk.Listbox(frame_lista, width=50, height=15)
     scrollbar = tk.Scrollbar(frame_lista, orient="vertical", command=lista_fornecedores.yview)
     lista_fornecedores.config(yscrollcommand=scrollbar.set)
@@ -31,7 +27,6 @@ def abrir_tela_fornecedores():
     lista_fornecedores.pack(side="left", fill="both", expand=True)
     scrollbar.pack(side="right", fill="y")
 
-    # Função para exibir os fornecedores
     def mostrar_fornecedores():
         cidade = entry_cidade.get().strip()
         tipo_estabelecimento = entry_tipo.get().strip()
@@ -47,6 +42,5 @@ def abrir_tela_fornecedores():
         else:
             messagebox.showerror("Erro", "Não foi possível encontrar fornecedores para essa cidade.")
 
-    # Botão para exibir os fornecedores
     button_fornecedores = tk.Button(janela_fornecedores, text="Ver Fornecedores Próximos", command=mostrar_fornecedores)
     button_fornecedores.pack()

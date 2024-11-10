@@ -1,0 +1,7 @@
+[
+    {"nome": "Toalha com Capuz", "categoria": "Banho", "quantidade": 2},
+    {"nome": "Cueiro", "categoria": "Roupas", "quantidade": 4},
+    {"nome": "Chocalho", "categoria": "Brinquedos", "quantidade": 1},
+    {"nome": "Mordedor", "categoria": "Acessorios", "quantidade": 2},
+    {"nome": "Cremes para Assaduras", "categoria": "Higiene", "quantidade": 3}
+]

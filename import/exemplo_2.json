@@ -1,0 +1,13 @@
+[
+    {"nome": "Fralda", "categoria": "Higiene", "quantidade": 50},
+    {"nome": "Mamadeira", "categoria": "Alimentacao", "quantidade": 2},
+    {"nome": "Body", "categoria": "Roupas", "quantidade": 5},
+    {"nome": "Chupeta", "categoria": "Acessorios", "quantidade": 3},
+    {"nome": "Banheira", "categoria": "Banho", "quantidade": 1},
+    {"nome": "Lenços Umedecidos", "categoria": "Higiene", "quantidade": 100},
+    {"nome": "Cobertor", "categoria": "Roupas", "quantidade": 2},
+    {"nome": "Carrinho de Bebê", "categoria": "Transporte", "quantidade": 1},
+    {"nome": "Termômetro", "categoria": "Saúde", "quantidade": 1},
+    {"nome": "Cadeira para Carro", "categoria": "Transporte", "quantidade": 1},
+    {"nome": "Protetor Solar Infantil", "categoria": "Higiene", "quantidade": 1}
+]

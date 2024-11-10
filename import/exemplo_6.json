@@ -1,0 +1,7 @@
+[
+    {"nome": "Meias", "categoria": "Roupas", "quantidade": 6},
+    {"nome": "Luva de Algodão", "categoria": "Roupas", "quantidade": 2},
+    {"nome": "Gorro", "categoria": "Roupas", "quantidade": 3},
+    {"nome": "Termômetro Digital", "categoria": "Saúde", "quantidade": 1},
+    {"nome": "Kit de Pente e Escova", "categoria": "Higiene", "quantidade": 1}
+]
