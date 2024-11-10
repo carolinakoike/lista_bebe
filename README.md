@@ -14,7 +14,6 @@ Este projeto é uma aplicação desenvolvida em Python com interface gráfica fe
 
 ## Funcionalidades
 
-
 **Cadastro e Login**: Interface para registro e autenticação de usuários.
 
 **Gerenciamento de Enxoval**: Adicionar, visualizar, atualizar e remover itens do enxoval, com armazenamento persistente em banco de dados.
@@ -28,21 +27,31 @@ Este projeto é uma aplicação desenvolvida em Python com interface gráfica fe
 **Lembretes de Feriados**: Informa sobre feriados importantes, para melhor planejamento das compras e organização.
 
 
-### Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 -**Python 3.12**
+
 -**Tkinter**: Utilizado para a construção da interface gráfica.
+
 -**SQLite**: Banco de dados local para armazenamento dos dados dos usuários, itens do enxoval e informações do bebê.
+
 -**Foursquare Places API**: Para busca e exibição de fornecedores locais.
+
 -**OpenWeatherMap API**: Fornece informações climáticas com base na localização.
+
 -**Calendarific API**: Exibe feriados de acordo com o país e o ano selecionados.
 
 
-### Pré-requisitos
+## Pré-requisitos
+
 Python 3.12 instalado.
+
 Instalação dos pacotes necessários listados no requirements.txt.
+
 Instalação dos Pacotes
+
 No diretório do projeto, instale os pacotes necessários com o comando:
+
 
 ```bash
 pip install -r requirements.txt
